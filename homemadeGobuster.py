@@ -11,6 +11,7 @@ for line in urlHack:
 urlHack.close()
 
 #Output:
+#<Response [200]> index.html
 #<Response [404]> about
 #<Response [404]> contact
 #<Response [404]> blog
