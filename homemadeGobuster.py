@@ -1,7 +1,11 @@
 import requests
+import sys
+#{ user@machine:~$ python3 homemadeGobuster.py url list.txt }
+# Accepts arguments at terminal execution in the above format. Make sure to include a forward slash
+# at the end of the url depending on the list.
 
-urlHack = open('urlPath.txt', 'r') # Word list is placed here.
-baseUrl = 'https://example.org/' # Add the target URL here.
+urlHack = open(sys.argv[2], 'r')#open('urlPath.txt', 'r')
+baseUrl = sys.argv[1]#'https://example.org/'
 response = requests.get(baseUrl)
 
 for line in urlHack:
