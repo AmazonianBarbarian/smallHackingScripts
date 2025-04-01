@@ -1,7 +1,7 @@
 import requests
 
 urlHack = open('urlPath.txt', 'r') # Word list is placed here.
-baseUrl = 'https://example.org/' # Add the targets URL here
+baseUrl = 'https://example.org/' # Add the target URL here
 response = requests.get(baseUrl)
 
 for line in urlHack:
