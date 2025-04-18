@@ -11,7 +11,7 @@ while [ $ipEndOctet -le 255 ]; do # Scans up to 255. Change the integer in the c
 		echo "scan result: 192.168.1.$ipEndOctet not detected"
 	else
 		deviceList+="192.168.1.$ipEndOctet\\n"
-		echo "scan result 192.168.1.$ipEndOctet detected"
+		echo "scan result: 192.168.1.$ipEndOctet detected"
 	fi
 	ipEndOctet=$((ipEndOctet + 1))
 done
